@@ -3,11 +3,9 @@ package part3.templatemethod;
 public class StringDisplay extends AbstractDisplay {
 
     private final String string;
-    private final int width;
 
     public StringDisplay(String string) {
         this.string = string;
-        this.width = string.length();
     }
 
     @Override
@@ -27,7 +25,7 @@ public class StringDisplay extends AbstractDisplay {
 
     private void printLine() {
         System.out.print("+");
-        for (int i = 0; i < width; i++) {
+        for (int i = 0; i < string.length(); i++) {
             System.out.print("-");
         }
         System.out.println("+");
