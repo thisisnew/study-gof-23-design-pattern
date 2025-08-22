@@ -1,6 +1,7 @@
 package part5.singleton;
 
 public class Singleton {
+
     private static final Singleton instance = new Singleton();
 
     private Singleton(){
